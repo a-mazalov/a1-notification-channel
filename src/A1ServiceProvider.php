@@ -15,7 +15,7 @@ class A1ServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/config.php' => config_path('a1.php'),
+                __DIR__.'/../config/config.php' => $this->app->resourcePath('../config/a1.php'),
             ], 'config');
         }
     }
