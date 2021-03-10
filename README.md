@@ -1,8 +1,6 @@
 # A1-notification-channel
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/a-mazalov/a1-channel.svg?style=flat-square)](https://packagist.org/packages/a-mazalov/a1-notification-channel)
-[![Build Status](https://img.shields.io/travis/a-mazalov/a1-channel/master.svg?style=flat-square)](https://travis-ci.org/a-mazalov/a1-notification-channel)
-[![Quality Score](https://img.shields.io/scrutinizer/g/a-mazalov/a1-channel.svg?style=flat-square)](https://scrutinizer-ci.com/g/a-mazalov/a1-notification-channel)
 [![Total Downloads](https://img.shields.io/packagist/dt/a-mazalov/a1-channel.svg?style=flat-square)](https://packagist.org/packages/a-mazalov/a1-notification-channel)
 
 Пакет добавляет возможность отправки СМС уведомлений через оператора А1 (Velcome)
