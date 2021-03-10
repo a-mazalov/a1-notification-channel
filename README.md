@@ -1,7 +1,6 @@
 # A1-notification-channel
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/a-mazalov/a1-channel.svg?style=flat-square)](https://packagist.org/packages/a-mazalov/a1-notification-channel)
-[![Total Downloads](https://img.shields.io/packagist/dt/a-mazalov/a1-channel.svg?style=flat-square)](https://packagist.org/packages/a-mazalov/a1-notification-channel)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/a-mazalov/a1-notification-channel?style=flat-square)](https://packagist.org/packages/a-mazalov/a1-notification-channel)
 
 Пакет добавляет возможность отправки СМС уведомлений через оператора А1 (Velcome)
 
@@ -38,6 +37,20 @@ A1_API_KEY=
 A1_API_LOGIN=
 A1_API_SCHEME=http
 A1_API_ENDPOINT=http://smart-sender.a1.by/api/'
+```
+
+## Установка в Lumen
+### Регистрация провайдера
+```php
+// bootstrap/app.php
+
+$app->register(A1\Channel\A1ServiceProvider::class);
+
+// Опционально регистрация фасада
+$app->withFacades(true, [
+    // ...
+    'A1\Channel\A1Facade' => 'A1Client',
+]);
 ```
 
 ## Использование
