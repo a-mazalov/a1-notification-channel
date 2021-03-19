@@ -36,7 +36,7 @@ return [
 A1_API_KEY=
 A1_API_LOGIN=
 A1_API_SCHEME=http
-A1_API_ENDPOINT=http://smart-sender.a1.by/api/'
+A1_API_ENDPOINT=http://smart-sender.a1.by/api/
 ```
 
 ## Установка в Lumen

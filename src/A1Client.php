@@ -68,8 +68,13 @@ class A1Client implements ClientInterface
     }
 
     /**
-     * Получение списка имен отправителей
+     * Отправка СМС
      *
+     * @param string $phoneNumber
+     * @param string $message
+     * @param string $senderName
+     * @param string $customMessageId
+     * @param string $sendOnDateTime
      * @return void
      */
     public function sendSms($phoneNumber, $message, $senderName = null, $customMessageId = null, $sendOnDateTime = null)
