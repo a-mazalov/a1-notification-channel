@@ -74,8 +74,9 @@ class A1Client implements ClientInterface
      * @param string $message
      * @param string $senderName
      * @param string $customMessageId
-     * @param string $sendOnDateTime
-     * @return void
+     * @param string $sendOnDateTime ГГГГ-ММ-ДД чч:мм:00. Например: 2020-03-30 12:30:00.
+     *
+     * @return object
      */
     public function sendSms($phoneNumber, $message, $senderName = null, $customMessageId = null, $sendOnDateTime = null)
     {
@@ -191,7 +192,8 @@ class A1Client implements ClientInterface
      * @param string url
      * @param string method = 'GET'
      * @param array options
-     * @return collection
+     *
+     * @return object
      */
     public function call($url, $method = 'GET',  $params = [], $headers = [])
     {
