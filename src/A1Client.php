@@ -176,8 +176,8 @@ class A1Client implements ClientInterface
      */
     public function getCustomStatusSms($customMessageId)
     {
-        return $this->call('status/sms', 'GET', [
-            'message_id' => $customMessageId,
+        return $this->call('statusCustom/sms', 'GET', [
+            'custom_id' => $customMessageId,
         ]);
     }
 
